@@ -8,6 +8,7 @@
 
 #include "FairyLand.h"
 
+extern "C" __declspec( dllexport ) FL::IFairyLandWorker*    CreateFairyLandWorker();
 extern "C" __declspec( dllexport ) FL::IResourceCache*		CreateResourceCache( );
 extern "C" __declspec( dllexport ) FL::IResourceManager*	CreateResourceManager( );
 extern "C" __declspec( dllexport ) FL::IResourceDownloader*	CreateResourceDownloader( FL::IFileDownloader* downloader );

@@ -116,6 +116,8 @@
     <ClInclude Include="..\..\Code\Engine\inc\Common\Vector4SSE.h" />
     <ClInclude Include="..\..\Code\Engine\inc\Common\Viewport.h" />
     <ClInclude Include="..\..\Code\Engine\inc\Common\ViewWindow.h" />
+    <ClInclude Include="..\..\Code\Engine\inc\Common\IFairyLandWorker.h" />
+    <ClInclude Include="..\..\Code\Engine\src\Common\FairyLandWin32Worker.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Code\Engine\src\FairyLandCommon.cpp" />
@@ -201,5 +203,7 @@
     <ClCompile Include="..\..\Code\Engine\src\Common\Vector4SSE.cpp" />
     <ClCompile Include="..\..\Code\Engine\src\Common\Viewport.cpp" />
     <ClCompile Include="..\..\Code\Engine\src\Common\ViewWindow.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\IFairyLandWorker.cpp" />
+    <ClCompile Include="..\..\Code\Engine\src\Common\FairyLandWin32Worker.cpp" />
   </ItemGroup>
 </Project>

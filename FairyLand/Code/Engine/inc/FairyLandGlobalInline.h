@@ -170,6 +170,14 @@ PS_INLINE IDatabaseManager& GetDatabaseManager( )
 	return *( GetGlobalHelper( ).mDatabaseManager );
 }
 
+PS_INLINE IFairyLandWorker& GetFairyLandWorker( )
+{
+	return *(GetGlobalHelper( ).mFairyLandWorker);
+}
+PS_INLINE IFairyLandWorker* GetFairyLandWorkerPointer( )
+{
+	return GetGlobalHelper( ).mFairyLandWorker;
+}
 /*
 
 PS_INLINE IScriptManager* GetScriptManagerPointer( )

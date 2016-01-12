@@ -45,6 +45,8 @@ struct FairyLandGlobal
 
 //	IScriptManager*			mScriptManager;
 
+	IFairyLandWorker*		mFairyLandWorker;
+
 	#ifdef _MULTIGLOBAL_ENABLE
 	_void*					mSingletons[256];
 	#endif
@@ -67,6 +69,9 @@ inline FairyLandGlobal& GetGlobalHelper( )
 
 _dword					GetFairyLandSingletonToken( );
 _void					NewFairyLandGlobalContext( );
+
+IFairyLandWorker&		GetFairyLandWorker();
+IFairyLandWorker*		GetFairyLandWorkerPointer();
 
 _void					SetFairyLandGlobal( _void* global );
 FairyLandGlobal&			GetFairyLandGlobal( );

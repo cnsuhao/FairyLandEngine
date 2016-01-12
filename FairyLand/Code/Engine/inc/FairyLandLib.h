@@ -8,6 +8,7 @@
 
 #include "FairyLand.h"
 
+FL::IFairyLandWorker*		CreateFairyLandWorker();
 FL::IResourceCache*			CreateResourceCache( );
 FL::IResourceManager*		CreateResourceManager( );
 FL::IResourceDownloader*	CreateResourceDownloader( FL::IFileDownloader* downloader );

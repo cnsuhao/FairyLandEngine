@@ -175,4 +175,11 @@ _void FL::FreeAllFairyLandSingleton( )
 
 	}
 */
+	if ( GetFairyLandWorkerPointer( ) != _null )
+	{
+		PS_TRACE( L"[KL] Releasing FairyLandWorker ...\r\n" )
+			GetFairyLandWorkerPointer( )->Release( );
+		PS_TRACE( L"[KL] Release FairyLandWorker Finished\r\n" )
+	}
 }
+
