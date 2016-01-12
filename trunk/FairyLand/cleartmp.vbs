@@ -13,6 +13,7 @@ rtnVal = MsgBox ("是否删除工程编译的所有临时文件?",36,"是否清除临时文件")
 If rtnVal = vbYES Then
 
 	fso.DeleteFolder(sCurDir & "\\BuildTmp\*")
+	fso.DeleteFolder(sCurDir & "\\bin\Log")
 	fso.DeleteFile(sCurDir & "\\bin\*.exp")
 	fso.DeleteFile(sCurDir & "\\bin\*.ilk")
 	fso.DeleteFile(sCurDir & "\\bin\*.lib")

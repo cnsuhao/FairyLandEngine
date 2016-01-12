@@ -129,6 +129,10 @@
 #include "Common/QueryTable.h"
 #include "Common/Encryption.h"
 #include "Common/Compression.h"
+#include "Common/IFairyLandWorker.h"
+#ifdef _WIN32
+#include "Common/FairyLandWin32Worker.h"
+#endif
 
 #include "Storage/IDataStream.h"
 #include "Storage/IDataArchive.h"
